@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: foodpacker;
+    src: url("fonts/Foodpacker.ttf");
+}
+#about {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: #DAEDD1;
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imgs/pastryrain.gif");
+    color: #DAEDD1;
+}
+
+.sidebar.open ~ #about {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.abtTitle {
+    position: relative;
+    font-style: foodpacker;
+    font-weight: 600;
+    font-size: 55px;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    top: 200px;
+    background:#190808;
+    padding: 10px 10px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.aboutText {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    text-indent: 2em;
+    top: 170px;
+    background: #190808;
+    padding: 20px 20px;
+}
+
+.aboutText1 {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    text-indent: 2em;
+    top: 170px;
+    background: #190808;
+    padding: 20px 20px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
+
+
