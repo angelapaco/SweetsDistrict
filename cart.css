@@ -1,0 +1,46 @@
+*
+
+body {
+	font-family: Nunito;
+	background-image: url(bg.jpg);
+	background-size: auto;
+	background-position: center;
+	background-size: cover;
+}
+
+.cart-page{
+	margin: 80px auto;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.cart-info {
+	display: flex;
+	flex-wrap: wrap;
+}
+th {
+	text-align: center;
+	padding:  5px;
+	color: white;
+	background: lightpink;
+	font-weight: normal;
+}
+td {
+	padding:  10px 5px;
+}
+
+h1 {
+	font-family: Pacifico;
+	font-size: 60px;
+	text-align: center;
+	color: gray;
+	margin: 20px;
+	text-shadow: whitesmoke 3px 5px;
+}
+p {
+	font-size: 50px;
+	color: gray;
+	font-family: Nunito;
+	text-align: center;
+}

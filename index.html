@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png">
+    <title>Sweets District</title>
+</head>
+    <body>
+        <script src="script.js" async></script>
+        <div class="sidebar">
+            <div class="logo-details">
+                <img src="imgs/logo.png" class="logo_img">
+            <div class="logo_name">Sweets District</div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#" onclick="toggleHome()">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                <a href="#" onclick="toggleShop()">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="links_name">Cart</span>
+                </a>
+                <span class="tooltip">Cart</span>
+                </li>
+                <li>
+                <a href="#" onclick="toggleContact()" id="contact">
+                    <i class='bx bx-chat' id="cntct"></i>
+                    <span class="links_name">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+                </li>
+                <li>
+                <a href="#"  onclick="toggleAbout()">
+                    <i class='bx bx-info-square'></i>
+                    <div>
+                        <span class="links_name">About</span>
+                    </div>
+                </a>
+                <span class="tooltip">About</span>
+                </li>
+                <div id="contactArea">
+                    <div class="contactWrapper">
+                        <img src="imgs/instaicon.png" class="igIcon">
+                        <img src="imgs/twittericon.png" class="twtIcon">   
+                        <p>© 2022 Sweets District</p>   
+                    </div>     
+                    <div class="background">
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="imgs/instaicon.png" class="igIcon"> 
+                        </a> 
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="imgs/twittericon.png" class="twtIcon"> 
+                        </a>  
+                        <p>© 2022 Sweets District</p> 
+                    </div>       
+                </div>
+            </ul>
+        </div>
+        <section class="home-section" id="home">
+            <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <a href="cakes/dripcake.html" target="_blank">
+                            <img src="banner_imgs/chocolatedripcake.png" id="img1">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="cakes/strawberryshortcake.html" target="_blank">
+                            <img src="banner_imgs/strawberrytart.png" id="img2">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="classic/macarons.html" target="_blank">
+                            <img src="banner_imgs/assortedmacaroons.png" id="img3">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="cupcakes/matchacupcake.html" target="_blank">
+                            <img src="banner_imgs/matchacupcake.png" id="img4">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="cakes/strawberryshortcake.html">
+                            <img src="banner_imgs/strawberryshortcake.png" id="img5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Best Seller</div>
+            <div class="bestSeller">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/matchacupcake.png" id="best1">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="bestName">Matcha Cupcake</div>
+                        <a href="cupcakes/matchacupcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                      <img src="imgs/strawberrytart.png" id="best2">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="bestName">Strawberry Tart</div>
+                        <a href="cupcakes/strawberrytart.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/chocolatedripcake.png" id="best3">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="bestName">Chocolate Drip Cake</div>
+                        <a href="cakes/dripcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/strawberryshortcake.png" id="best4">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="bestName">Strawberry Shortcake</div>
+                        <a href="cakes/strawberryshortcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Classic</div>
+            <div class="classic">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/spanishbread.png" id="classic1">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="classicName">Spanish Bread</div>
+                        <a href="classic/spanishbread.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/pandesl.jpg" id="classic2">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="classicName">Pandesal</div>
+                        <a href="classic/pandesal.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/assortedmacaroons.png" id="classic2">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="classicName">Macarons</div>
+                        <a href="classic/macarons.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="title">Classic Cakes</div>
+            <div class="classicCakes">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/strawberryshortcake.png" id="cCake1">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="cCakeName">Strawberry Shortcake</div>
+                        <a href="cakes/strawberryshortcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/chocolate birthday cake.jpg" id="cCake2">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="cCakeName">Choco Birthday Cake</div>
+                        <a href="cakes/chococake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/classicnobakevanillacheesecake.jpg" id="cCake3">
+                    </div>
+                    <div class="textWrapper">
+                        <div class="cCakeName">Vanilla Cheese Cake</div>
+                        <a href="cakes/vanillacheesecake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Cakes</div>
+            <div class="cakes">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/bananacakewithcreamcheese.jpg" id="cake1">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Banana Cream<br>Cheese Cake</div>
+                        <a href="cakes/bananacheesecake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/carrotandwalnutcake.jpg" id="cake2">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Carrot and<br>Walnut Cake</div>
+                        <a href="cakes/carrotcake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/chocolatecoconutcake.jpg" id="cake3">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Chocolate<br>Coconut Cake</div>
+                        <a href="cakes/chocolatecoconut.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/chocolatedripcake.png" id="cake4">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Chocolate<br>Drip Cake</div>
+                        <a href="cakes/dripcake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cakesRow2">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/flourlessorangecake.png" id="cake5">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Flourless<br>Orange Cake</div>
+                        <a href="cakes/orangecake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/glutenfreepresiancake.jpg" id="cake6">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Gluten Free<br>Persian Cake</div>
+                        <a href="cakes/persiancake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/lemonyoghurtcakewithsyrup.jpg" id="cake7">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Lemon Yogurt Cake<br>with Syrup</div>
+                        <a href="cakes/lemonyogurt.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/newyorkbakedcake.jpg" id="cake8">
+                    </div>
+                    <div class="textWrapper">
+                        <div>New York Baked<br>Cheese Cake</div>
+                        <a href="cakes/newyork.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">Cupcakes</div>
+            <div class="cupcakes">
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/Chocolate mud cupcakes.jpg" id="cupcake1">
+                    </div>
+                    <div class="textWrapper1">
+                        <div>Chocolate Mud Cupcake</div>
+                        <a href="cupcakes/mudcupcake.html" target="_blank">
+                            <div class="ordr">Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/matchacupcake.png" id="cupcake2">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Matcha Cupcake</div>
+                        <a href="cupcakes/matchacupcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/redvelvetcupcakes.jpg" id="cupcake3">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Red Velvet Cupcake</div>
+                        <a href="cupcakes/redvelvet.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemContainer">
+                    <div class="imgWrapper">
+                        <img src="imgs/vanillacupcakes.png" id="cupcake4">
+                    </div>
+                    <div class="textWrapper">
+                        <div>Vanilla Cupcake</div>
+                        <a href="cupcakes/vanillacupcake.html" target="_blank">
+                            <div>Order</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="shop">
+            <div class="shopTitle">Shop</div>
+        </div>
+        
+        <div id="about">
+            <div class="abtTitle">About</div>
+            <div class="aboutText">You won't find any ordinary baked goods around Sweets District. We’re the type of artisan bakers who don’t like being told “you-can’t-dough-that”, and so we twist our pastries in creatively healthful ways.</div>
+            <div class="aboutText1">Our mission here is to bake delicious, sugar-free, gluten-free, and low-carb versions of your favorite treats for your guilt-free enjoyment -- whether you’re watching your sugar or not!
+            </div>
+        </div>
+
+        <div id="cart">
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th> Products</th>
+                        <th> Quantity</th>
+                        <th> Subtotal</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                               
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="total-price">
+
+                    <table>
+                        <tr>
+                            <td> </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p> No Products Found! </p>
+        </div>
+    </body>
+</html>
+

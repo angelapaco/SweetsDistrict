@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: foodpacker;
+    src: url("fonts/Foodpacker.ttf");
+}
+
+#shop {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: red;
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.sidebar.open ~ #shop {
+    left: 250px;
+    width: calc(100% - 250px);
+}
